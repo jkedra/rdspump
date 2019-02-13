@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+import rdspump
+
+rdspump.rdspump.entry_point()

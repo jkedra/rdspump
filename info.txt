@@ -1,0 +1,14 @@
+select * from table(rdsadmin.rds_file_util.listdir(p_directory => '&MyOracleDatabaseDirectoryName'));
+http://www.oracle-wiki.net/startcloud
+
+todo: add Makefile to build the test/prod version and upload to pypi
+
+todo: add application string to v$session because right now it looks like:
+USERNAME     S	i SIDSER     machine	PROCESS   PROGRAM 	       OSUSER   LOGON
+------------ - -- ---------- ---------- --------- ---------------- -------- -----------
+JUREK        I	1 391,59960  Ubuntu16a	22678	  python3.7@Ubunt  jxa	    150419.1009
+JUREK        A	1 1012,858   Ubuntu16a	29120	  oracle@ubuntu    jxa	    150419.1014
+
+todo: add support for compressed files (upload/download).
+
+todo: add example configuration file
